@@ -13,7 +13,7 @@ public class DBhelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("CREATE TABLE users(id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT)");
+        db.execSQL("CREATE TABLE (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT)");
     }
 
     @Override
@@ -35,7 +35,7 @@ public class DBhelper extends SQLiteOpenHelper {
 
         String result = "No Data";
         if (cursor.moveToLast()) {
-            result = cursor.getString(1); // name column
+            result = cursor.getString(1);
         }
         cursor.close();
         return result;

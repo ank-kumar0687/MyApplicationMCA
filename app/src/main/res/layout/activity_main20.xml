@@ -6,11 +6,16 @@
     android:layout_height="match_parent">
 
     <EditText
-        android:id="@+id/editText"
-        android:hint="Enter text"
+        android:id="@+id/editText1"
+        android:hint="NAME"
+        android:layout_marginTop="120dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-
+    <EditText
+        android:id="@+id/editText2"
+        android:hint="EMAIL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
     <Button
         android:id="@+id/btnSave"
         android:text="Save"
