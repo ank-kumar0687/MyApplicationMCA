@@ -1,0 +1,28 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText android:id="@+id/etId" android:hint="Doctor ID"/>
+        <EditText android:id="@+id/etFname" android:hint="First Name"/>
+        <EditText android:id="@+id/etLname" android:hint="Last Name"/>
+        <EditText android:id="@+id/etMob" android:hint="Mobile"/>
+        <EditText android:id="@+id/etAddr" android:hint="Address"/>
+        <EditText android:id="@+id/etCity" android:hint="City"/>
+        <EditText android:id="@+id/etSpec" android:hint="Specialization"/>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:text="Submit"/>
+
+        <Button
+            android:id="@+id/btnGoSearch"
+            android:text="Go to Search"/>
+
+    </LinearLayout>
+</ScrollView>
